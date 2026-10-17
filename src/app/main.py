@@ -26,8 +26,8 @@ app.add_exception_handler(HTTPException, plain_text_exception_handler)
 HEADER = "[ Tic-Tac-Toe ]"
 
 README_PATH = Path(__file__).resolve().parent.parent.parent / "README.md"
-OVERVIEW_PATH = Path(__file__).resolve().parent.parent.parent / "OVERVIEW.md"
-FASTAPI_PATH = Path(__file__).resolve().parent.parent.parent / "FAST-API.md"
+OVERVIEW_PATH = Path(__file__).resolve().parent.parent.parent / "docs" / "OVERVIEW.md"
+FASTAPI_PATH = Path(__file__).resolve().parent.parent.parent / "docs" / "FAST-API.md"
 
 
 @app.get("/", response_class=PlainTextResponse, include_in_schema=False)
